@@ -9,6 +9,7 @@ import Foundation
 
 protocol DetailPresenterToViewProtocol: class {
     func viewDidLoad()
+    func viewWillAppear()
     func viewWillDisappear()
     
     var title: String? { get }

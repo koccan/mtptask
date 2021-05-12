@@ -38,14 +38,14 @@ extension MainInteractor: MainInteractorProtocol {
     
     func calculateStoryCellHeight(for itemCount: Int) -> CGFloat {
         let screenWitdh = (UIApplication.shared.keyWindow?.bounds.width ?? 0)
-        let cellPerRow = getStoryCellPerRow()
+        let cellPerRow = getStoryCellCountPerRow()
         let extraItemHeight = cellPerRow == 2 ? 70 : 93 // minimumLineSpacing + labelsHeight
         let marginsAndInsets = 20 * (cellPerRow - 1)
         let height = ((screenWitdh - CGFloat(marginsAndInsets)) / CGFloat(cellPerRow).rounded(.down))
         return ((height + CGFloat(extraItemHeight)) * CGFloat(itemCount / cellPerRow))
     }
     
-    func getStoryCellPerRow() -> Int {
+    func getStoryCellCountPerRow() -> Int {
         let screenWitdh = (UIApplication.shared.keyWindow?.bounds.width ?? 0)
         let cellPerRow = UIScreen.main.traitCollection.userInterfaceIdiom == .pad ? (screenWitdh > 375 ? 4 : 2) : 2
         return cellPerRow

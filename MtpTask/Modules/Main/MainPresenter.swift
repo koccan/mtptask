@@ -83,8 +83,8 @@ extension MainPresenter: MainPresenterToViewProtocol {
         router.showDetail(with: contentItem)
     }
     
-    var storyCellPerRow: Int {
-        interactor.getStoryCellPerRow()
+    var storyCellCountPerRow: Int {
+        interactor.getStoryCellCountPerRow()
     }
 }
 

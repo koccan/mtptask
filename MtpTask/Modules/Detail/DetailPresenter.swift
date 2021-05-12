@@ -28,9 +28,12 @@ class DetailPresenter {
 extension DetailPresenter: DetailPresenterToViewProtocol, DatePrintable {
     
     func viewDidLoad() {
-        self.view?.showNavigationBar()
         self.view?.setBlurUI()
         self.view?.bindElements()
+    }
+    
+    func viewWillAppear() {
+        self.view?.showNavigationBar()
     }
     
     func viewWillDisappear() {

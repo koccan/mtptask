@@ -12,5 +12,5 @@ protocol MainInteractorProtocol: class {
     var presenter: MainPresenterToInteractorProtocol?  { get set }
     func getMainTableItems()
     func calculateStoryCellHeight(for count: Int) -> CGFloat
-    func getStoryCellPerRow() -> Int
+    func getStoryCellCountPerRow() -> Int
 }

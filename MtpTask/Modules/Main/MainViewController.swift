@@ -112,7 +112,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         case .stories:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: StoryTableViewCell.nameOfClass, for: indexPath) as? StoryTableViewCell else { return UITableViewCell() }
             cell.collectionStory.tag = MainCollectionViewEnum.story.rawValue
-            cell.setCellLayout(with: self.presenter?.storyCellPerRow ?? 0)
+            cell.setCellLayout(with: self.presenter?.storyCellCountPerRow ?? 0)
             cell.collectionStory.dataSource = self
             cell.collectionStory.delegate = self
             return cell

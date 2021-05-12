@@ -23,7 +23,7 @@ protocol MainPresenterToViewProtocol: class {
     
     func didMeditationTapped(at index: Int)
     func didStoryTapped(at index: Int)
-    var storyCellPerRow: Int { get }
+    var storyCellCountPerRow: Int { get }
 }
 
 protocol MainPresenterToInteractorProtocol: class {

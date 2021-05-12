@@ -57,31 +57,12 @@
 		D73C92B3264C110200FC4FCC /* DatePrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73C92B2264C110200FC4FCC /* DatePrintable.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D73C903D264B016300FC4FCC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D73C901E264B016200FC4FCC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D73C9025264B016200FC4FCC;
-			remoteInfo = MtpTask;
-		};
-		D73C9048264B016300FC4FCC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D73C901E264B016200FC4FCC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D73C9025264B016200FC4FCC;
-			remoteInfo = MtpTask;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		D73C9026264B016200FC4FCC /* MtpTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MtpTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73C9029264B016200FC4FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D73C9032264B016300FC4FCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D73C9035264B016300FC4FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D73C9037264B016300FC4FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D73C903C264B016300FC4FCC /* MtpTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MtpTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D73C9047264B016300FC4FCC /* MtpTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MtpTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73C9084264B02F800FC4FCC /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		D73C908E264B030B00FC4FCC /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		D73C9093264B031500FC4FCC /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
@@ -137,20 +118,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D73C9039264B016300FC4FCC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D73C9044264B016300FC4FCC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -166,8 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				D73C9026264B016200FC4FCC /* MtpTask.app */,
-				D73C903C264B016300FC4FCC /* MtpTaskTests.xctest */,
-				D73C9047264B016300FC4FCC /* MtpTaskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -392,42 +357,6 @@
 			productReference = D73C9026264B016200FC4FCC /* MtpTask.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D73C903B264B016300FC4FCC /* MtpTaskTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D73C9053264B016300FC4FCC /* Build configuration list for PBXNativeTarget "MtpTaskTests" */;
-			buildPhases = (
-				D73C9038264B016300FC4FCC /* Sources */,
-				D73C9039264B016300FC4FCC /* Frameworks */,
-				D73C903A264B016300FC4FCC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D73C903E264B016300FC4FCC /* PBXTargetDependency */,
-			);
-			name = MtpTaskTests;
-			productName = MtpTaskTests;
-			productReference = D73C903C264B016300FC4FCC /* MtpTaskTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D73C9046264B016300FC4FCC /* MtpTaskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D73C9056264B016300FC4FCC /* Build configuration list for PBXNativeTarget "MtpTaskUITests" */;
-			buildPhases = (
-				D73C9043264B016300FC4FCC /* Sources */,
-				D73C9044264B016300FC4FCC /* Frameworks */,
-				D73C9045264B016300FC4FCC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D73C9049264B016300FC4FCC /* PBXTargetDependency */,
-			);
-			name = MtpTaskUITests;
-			productName = MtpTaskUITests;
-			productReference = D73C9047264B016300FC4FCC /* MtpTaskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -439,14 +368,6 @@
 				TargetAttributes = {
 					D73C9025264B016200FC4FCC = {
 						CreatedOnToolsVersion = 12.4;
-					};
-					D73C903B264B016300FC4FCC = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = D73C9025264B016200FC4FCC;
-					};
-					D73C9046264B016300FC4FCC = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = D73C9025264B016200FC4FCC;
 					};
 				};
 			};
@@ -464,8 +385,6 @@
 			projectRoot = "";
 			targets = (
 				D73C9025264B016200FC4FCC /* MtpTask */,
-				D73C903B264B016300FC4FCC /* MtpTaskTests */,
-				D73C9046264B016300FC4FCC /* MtpTaskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -485,20 +404,6 @@
 				D73C92A2264BFDD800FC4FCC /* Detail.xib in Resources */,
 				D73C9033264B016300FC4FCC /* Assets.xcassets in Resources */,
 				D73C91FF264B4BE100FC4FCC /* BannerTableViewCell.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D73C903A264B016300FC4FCC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D73C9045264B016300FC4FCC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,34 +455,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D73C9038264B016300FC4FCC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D73C9043264B016300FC4FCC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D73C903E264B016300FC4FCC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D73C9025264B016200FC4FCC /* MtpTask */;
-			targetProxy = D73C903D264B016300FC4FCC /* PBXContainerItemProxy */;
-		};
-		D73C9049264B016300FC4FCC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D73C9025264B016200FC4FCC /* MtpTask */;
-			targetProxy = D73C9048264B016300FC4FCC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D73C9034264B016300FC4FCC /* LaunchScreen.storyboard */ = {
@@ -755,86 +633,6 @@
 			};
 			name = Release;
 		};
-		D73C9054264B016300FC4FCC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MtpTaskTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mtp.MtpTaskTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MtpTask.app/MtpTask";
-			};
-			name = Debug;
-		};
-		D73C9055264B016300FC4FCC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MtpTaskTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mtp.MtpTaskTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MtpTask.app/MtpTask";
-			};
-			name = Release;
-		};
-		D73C9057264B016300FC4FCC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MtpTaskUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mtp.MtpTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MtpTask;
-			};
-			name = Debug;
-		};
-		D73C9058264B016300FC4FCC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MtpTaskUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mtp.MtpTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MtpTask;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -852,24 +650,6 @@
 			buildConfigurations = (
 				D73C9051264B016300FC4FCC /* Debug */,
 				D73C9052264B016300FC4FCC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D73C9053264B016300FC4FCC /* Build configuration list for PBXNativeTarget "MtpTaskTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D73C9054264B016300FC4FCC /* Debug */,
-				D73C9055264B016300FC4FCC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D73C9056264B016300FC4FCC /* Build configuration list for PBXNativeTarget "MtpTaskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D73C9057264B016300FC4FCC /* Debug */,
-				D73C9058264B016300FC4FCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

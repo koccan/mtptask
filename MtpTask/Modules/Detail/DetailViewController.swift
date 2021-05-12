@@ -16,6 +16,11 @@ class DetailViewController: UIViewController {
         presenter?.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter?.viewWillAppear()
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         presenter?.viewWillDisappear()
@@ -52,6 +57,6 @@ extension DetailViewController: DetailViewProtocol, ImageShowable {
     }
     
     func hideNavigationBar() {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }
