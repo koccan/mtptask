@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MtpTask" customModuleProvider="target">
+            <connections>
+                <outlet property="loader" destination="vrs-8E-2CL" id="mXO-ZG-NTt"/>
+                <outlet property="tableMain" destination="ke2-jn-Qnj" id="kuS-h7-aAV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="GradientView" customModule="MtpTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ke2-jn-Qnj">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="vrs-8E-2CL">
+                    <rect key="frame" x="182" y="428" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="88w-kt-k7V"/>
+                        <constraint firstAttribute="height" constant="50" id="V99-lS-7xY"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vrs-8E-2CL" firstAttribute="centerY" secondItem="ke2-jn-Qnj" secondAttribute="centerY" id="OPt-ak-pgy"/>
+                <constraint firstItem="ke2-jn-Qnj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WdJ-dT-5Po"/>
+                <constraint firstItem="ke2-jn-Qnj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cn6-Sj-7ko"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ke2-jn-Qnj" secondAttribute="bottom" id="dZI-dq-GQz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ke2-jn-Qnj" secondAttribute="trailing" id="pKm-BO-XyL"/>
+                <constraint firstItem="vrs-8E-2CL" firstAttribute="centerX" secondItem="ke2-jn-Qnj" secondAttribute="centerX" id="wZi-uC-iVh"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                    <color key="value" red="0.23529411759999999" green="0.30196078430000001" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="130" y="146"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

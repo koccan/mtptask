@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BannerTableViewCell" id="KGk-i7-Jjw" customClass="BannerTableViewCell" customModule="MtpTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="165.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="444" height="165.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJP-nI-odu" customClass="RadiusView" customModule="MtpTask" customModuleProvider="target">
+                        <rect key="frame" x="25" y="40" width="394" height="125.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconNight" translatesAutoresizingMaskIntoConstraints="NO" id="w4b-it-0aK">
+                                <rect key="frame" x="15" y="34" width="58" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="Gvx-TV-Wbt"/>
+                                    <constraint firstAttribute="height" constant="58" id="pD5-uN-4tX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="zTw-fX-aSz">
+                                <rect key="frame" x="93" y="10" width="286" height="105.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="105" id="1n1-Gb-R0w"/>
+                                </constraints>
+                                <string key="text">Look. Pretty, isn’t it?
+Perfectly balanced. As all things should be.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25098039220000001" green="0.21176470589999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="w4b-it-0aK" firstAttribute="leading" secondItem="UJP-nI-odu" secondAttribute="leading" constant="15" id="3pg-0N-wPp"/>
+                            <constraint firstAttribute="bottom" secondItem="zTw-fX-aSz" secondAttribute="bottom" constant="10" id="CEW-nf-211"/>
+                            <constraint firstItem="zTw-fX-aSz" firstAttribute="leading" secondItem="w4b-it-0aK" secondAttribute="trailing" constant="20" id="lkr-Tr-byc"/>
+                            <constraint firstAttribute="trailing" secondItem="zTw-fX-aSz" secondAttribute="trailing" constant="15" id="q2q-sF-PFv"/>
+                            <constraint firstItem="zTw-fX-aSz" firstAttribute="top" secondItem="UJP-nI-odu" secondAttribute="top" constant="10" id="qYC-ZE-vwG"/>
+                            <constraint firstItem="w4b-it-0aK" firstAttribute="centerY" secondItem="UJP-nI-odu" secondAttribute="centerY" id="xvX-gu-0p5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UJP-nI-odu" secondAttribute="bottom" id="2qj-O3-ynU"/>
+                    <constraint firstItem="UJP-nI-odu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="CYz-6z-vr8"/>
+                    <constraint firstAttribute="trailing" secondItem="UJP-nI-odu" secondAttribute="trailing" constant="25" id="bcz-IJ-IMu"/>
+                    <constraint firstItem="UJP-nI-odu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="xnO-sT-LBR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="221.73913043478262" y="167.07589285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconNight" width="30" height="30"/>
+    </resources>
+</document>
